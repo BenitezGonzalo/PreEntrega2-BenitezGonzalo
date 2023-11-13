@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.fondoPrincipal{
+    background-image: url("../img/fondo_inicio.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+
+}
+
+
+header {
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: rgba(43, 3, 3, 0.449);
+    font-family: 'Oswald', sans-serif;
+}
+.logo {
+    width: 100px;
+}
+
+.logoUsuario {
+    width: 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.header, .logoUsuario{
+    margin-left: 10px;
+
+}
+
+.header {
+    color: rgb(168, 20, 20);
+    border:1px solid red;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 50px;
+    border-radius: 20px;
+
+}
+
+.header:hover{
+    background-color: rgb(87, 18, 18);
+    color: rgb(28, 20, 20);
+    border:2px solid black
+}
+
+.mainIndex, footer{
+    color: white;
+}
+
+.mainIndex{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    
+}
+
+section{
+    text-align: center;
+    width: 600px;
+    position: relative;
+    right: 12rem;
+}
+
+/* 16px = 1rem */
+.h1Inicio{
+    font-size: 5rem;
+ }
+
+section>p{
+    padding-top: 10px;
+ }
+
+/* button{
+    margin-top: 2.5rem;
+    padding: 15px 40px;
+    border-radius: 20px;
+  BOTON ORIGINAL
+} */
+.botonInicio {
+    border: none;
+    outline: none;
+    background-color: #6c5ce7;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #a29bfe;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    padding: 15px 40px;
+  
+  }
+  
+  button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #a29bfe;
+  }
+footer{
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerImg {
+width: 500px;
+}
+
+.footerImg>img{
+    width: 50px;
+    height: 50px;
+    margin-left: 4rem;
+    cursor: pointer;
+}
+.itemFooter{
+    margin-left: 1rem;
+}
+
+/* Inicio Sesion */
+
+.mainInicioSesion{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    background-color: rgba(237, 237, 237, 0.395);
+    border-radius: 10px;
+}
+
+.container .h1InicioSesion {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.container form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .usuario-contraseña {
+    position: relative;
+    border-bottom: 2px solid black;
+    margin: 20px 0;
+}
+
+.usuario-contraseña input {
+    margin-top: 10px ;
+    width: 100px;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.usuario-contraseña label{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+} 
+
+.recordar {
+    margin: -5px 0 20px 5px;
+    color: lightskyblue;
+    cursor: pointer;
+}
+
+.recordar:hover {
+    text-decoration: underline;
+}
+
+.inicioBoton{
+        width: 300px;
+        height: 50px;
+        border: 1px solid;
+        background-color: rgba(255, 255, 255, 0.741);
+        border-radius: 25px;
+        font-size: 18px;
+        color: red;
+        cursor: pointer;
+        outline: none;
+    }
+
+.registrarse {
+    margin: 25px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.registrarse a {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+.registrarse a:hover {
+    text-decoration: underline;
+}
+
+/* Registro */
+
+.mainRegistro{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    background-color: rgba(237, 237, 237, 0.395);
+    border-radius: 10px;
+}
+
+.container .h1Registro {
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.container form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .inputs-registro {
+    position: relative;
+    border-bottom: 2px solid black;
+    margin: 10px 0;
+}
+
+.inputs-registro input {
+    margin-top: 10px ;
+    width: 100px;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.inputs-registro label{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+} 
+
+.registroBoton {
+        width: 300px;
+        height: 50px;
+        border: 1px solid;
+        background-color: rgba(255, 255, 255, 0.741);
+        border-radius: 25px;
+        font-size: 18px;
+        color: black;
+        cursor: pointer;
+        outline: none;
+    }
+
+    /* Nosotros */
+
+    .mainNosotros{
+        min-height: 80vh;
+    }
+
+    .h1Nosotros {
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .fondoNosotros1 {
+        width: 20rem;
+        margin-left: 50px;
+    }
+
+    .fondoNosotros2 {
+        width: 20rem;
+        margin-right: 50px;
+    }
+
+    .imgText {
+        margin: 40px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Contactos */
+
+    .mainContacto{
+        min-height: 80vh;
+        margin: 20px;
+    }
+
+    .contactos {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #a9a8bcab;
+        box-shadow: 0px 0px 10px 0px orange;
+    }
+
+    .contactoMapa {
+        width: 100%;
+        height: auto;
+        flex: 50%;
+    }
+
+    .contactoMapa iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contactoFormulario {
+        width: 100%;
+        height: auto;
+        flex: 50%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .contactoFormulario h1 {
+        margin-bottom: 10px;
+    }
+
+    .contactoFormTexto {
+        width: 100%;
+        height: 40px;
+        color: red;
+        border: 1px solid black;
+        border-radius: 50px;
+        outline: none;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .contactoTextarea{
+        width: 100%;
+        height: 130px;
+        color: red;
+        border: 1px solid black;
+        border-radius: 10px;
+        outline: none;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .contactoBoton{
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        background-color: blue ;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px 0;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /* Productos */
+
+    .mainProducto{
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; 
+    } 
+
+    .barraBusqueda {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #fff;
+        padding: 10px 25px 10px 25px;
+        border-radius: 20px; */
+    }
+
+    .buscador{
+        padding: 9px 10px 9px 32px;
+        background: #fff url(https://cdn-icons-png.flaticon.com/512/2531/2531409.png)   no-repeat  300px 200px center;
+        width: 200px;
+        font-size: 14px;
+        outline: none;
+        border-radius: 20px;
+        color: #444;
+        border: 3px solid #ff0000;
+        transition: all .5s ;
+    }
+
+    .tarjetaProducto{
+        background-color: rgb(101, 14, 14);
+        border-radius: 30px;
+        width: 200px;
+        height: 190px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position:relative;
+        margin: 90px;
+        box-shadow: 10px 18px 5px 0px rgba(125,10,10,0.39);
+        -webkit-box-shadow: 10px 18px 5px 0px rgba(125,10,10,0.39);
+        -moz-box-shadow: 10px 18px 5px 0px rgba(125,10,10,0.39);
+        font-family: 'Oswald', sans-serif;
+    
+    }
+    
+    h3{
+        margin-top: 70px;
+    }
+    
+    .tarjetaProducto>img{
+        width: 150px;
+        position:absolute;
+        bottom:60%;
+        left: 15%; 
+        filter:drop-shadow(10px 10px 3px rgb(0, 0, 0)) 
+    }
+    
+    .precioCarrito{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%; 
+    }
+    
+    .precioCarrito>p{
+        font-size: 2rem;
+    }
+    
+    .precioCarrito>img {
+        background-color: black;
+        border-radius: 40px;
+        padding:15px;
+        cursor: pointer;
+    }
+
+     
