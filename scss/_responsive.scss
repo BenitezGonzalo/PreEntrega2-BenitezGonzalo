@@ -1,0 +1,187 @@
+/* Vista Mobile */
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+
+    .fondoPrincipal {
+    background-image: url("../img/fondo_inicio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+    header {
+    height: auto;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    background-color: rgba(43, 3, 3, 0.449);
+    font-family: "Oswald", sans-serif;
+    }
+
+    .logo {
+    width: 100px;
+    }
+
+  /* Contenedor Menu y logo usuario */
+    nav {
+/*    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    @include center;
+    flex-direction: column;
+    }
+
+  /* Cada uno de los anchors (inicio, producto , etc) */
+    .header {
+    width: 120px;
+    text-align: center;
+    color: rgb(168, 20, 20);
+    border: 1px solid red;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    }
+
+    .logoUsuario {
+    width: 45px;
+    }
+
+    .barraBusqueda {
+/*        display: flex;
+        align-items: center;
+        justify-content: center;*/
+        @include center;
+        padding: 20px;
+    } 
+
+    /* .header, .logoUsuario{
+        margin-left: 10px;
+    } */
+
+    .mainIndex {
+    min-height: 80vh;
+    /* ver si sacar o no */
+/*    display: flex;
+    align-items: center;
+    justify-content: center;*/
+    @include center;
+    flex-direction: column;
+    }
+
+    section {
+    /* margin: 40px; */
+    text-align: center;
+    width: 300px;
+    position: static;
+    }
+
+    .h1Inicio {
+    font-size: 3rem;
+    }
+
+    .imgText {
+    margin: 40px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .fondoNosotros1 {
+    width: 20rem;
+    margin-left: 0;
+    }
+
+    .h1Nosotros {
+    font-size: 2.5rem;
+    }
+
+    footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .footerImg > img {
+    width: 50px;
+    height: 50px;
+    margin-left: 0;
+    cursor: pointer;
+    }
+
+    .footerImg {
+    width: auto;
+    }
+}
+
+/* Vista Tablet */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .fondoPrincipal {
+    background-size: cover;
+    }
+
+    .header {
+    padding: 10px 20px;
+    }
+
+    .mainIndex {
+    display: flex;
+    align-items: center;
+    }
+
+    section {
+    position: static;
+    }
+
+    footer {
+    display: flex;
+    justify-content: center;
+    }
+
+    .footerImg {
+    width: auto;
+    }
+
+    .noneTablet {
+    display: none;
+    }
+}
+
+/* Tablet tambien */
+@media only screen and (min-width: 426px) and (max-width: 615px) {
+    header {
+    font-size: 15px;
+    }
+
+    .header {
+    padding: 5px 10px;
+    }
+
+    .mainIndex {
+    display: flex;
+    flex-direction: row;
+    }
+
+    footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .footerImg > img {
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    cursor: pointer;
+    }
+
+    .footerImg {
+    width: auto;
+    }
+}

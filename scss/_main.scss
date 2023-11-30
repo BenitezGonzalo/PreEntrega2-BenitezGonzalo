@@ -1,0 +1,58 @@
+.mainIndex,
+footer {
+  color: white;
+}
+
+.mainIndex {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+
+section {
+  text-align: center;
+  width: 600px;
+  position: relative;
+  right: 12rem;
+}
+
+/* 16px = 1rem */
+.h1Inicio {
+  font-size: 5rem;
+}
+
+section > p {
+  padding-top: 10px;
+  background-color: rgba(60, 56, 56, 0.648);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(253, 253, 253);
+}
+
+/* button{
+    margin-top: 2.5rem;
+    padding: 15px 40px;
+    border-radius: 20px;
+  BOTON ORIGINAL
+} */
+.botonInicio {
+  border: none;
+  outline: none;
+  background-color: #6c5ce7;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #a29bfe;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  padding: 15px 40px;
+}
+
+button:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}

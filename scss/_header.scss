@@ -1,0 +1,44 @@
+header {
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(43, 3, 3, 0.449);
+    font-family: "Oswald", sans-serif; 
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .logoUsuario {
+    width: 50px;
+  }
+  
+  nav {
+/*    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    @include center;
+  }
+  
+  .header,
+  .logoUsuario {
+    margin-left: 10px;
+  }
+  
+  .header {
+    color: rgb(168, 20, 20);
+    border: 1px solid red;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 50px;
+    border-radius: 20px;
+  }
+  
+  .header:hover {
+    background-color: rgb(87, 18, 18);
+    color: rgb(28, 20, 20);
+    border: 2px solid black;
+  }
