@@ -667,6 +667,9 @@ h3 {
     width: 300px;
     position: static;
   }
+  .columnaImgText {
+    flex-direction: column-reverse;
+  }
   .h1Inicio {
     font-size: 3rem;
   }
@@ -678,9 +681,9 @@ h3 {
     justify-content: space-between;
     align-items: center;
   }
-  .fondoNosotros1 {
-    width: 20rem;
-    margin-left: 0;
+  .fondoNosotros1, .fondoNosotros2 {
+    width: 100%;
+    margin: 0;
   }
   .h1Nosotros {
     font-size: 2.5rem;
@@ -756,6 +759,24 @@ h3 {
   }
   .footerImg {
     width: auto;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .columnaImgText {
+    flex-direction: column-reverse !important;
+  }
+  .imgText {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fondoNosotros1 {
+    width: 100%;
+    margin: 0;
+  }
+  .fondoNosotros2 {
+    width: 100%;
+    margin: 0;
   }
 }
 
