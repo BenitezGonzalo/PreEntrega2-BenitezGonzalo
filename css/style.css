@@ -14,12 +14,16 @@
 }
 
 header {
-  height: 13vh;
-  display: flex;
+  height: 18vh;
+  /*display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgba(43, 3, 3, 0.449);
+  background-color: rgba(43, 3, 3, 0.449); */
   font-family: "Oswald", sans-serif;
+}
+
+.navbar-toggler {
+  background-color: white;
 }
 
 .logo {
@@ -45,7 +49,9 @@ nav {
 }
 
 .header {
+  font-size: 18px;
   color: rgb(168, 20, 20);
+  text-align: center;
   border: 1px solid red;
   text-decoration: none;
   text-transform: uppercase;
@@ -54,8 +60,25 @@ nav {
   border-radius: 20px;
 }
 
+.nav-item {
+  width: 8rem;
+}
+
+.dropdown-toggle {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-toggle::after {
+  border-top: unset;
+}
+
+.dropdown-menu {
+  --bs-dropdown-min-width:8rem ;
+}
+
 .header:hover {
-  background-color: rgb(87, 18, 18);
+  /*background-color: rgb(87, 18, 18);*/
   color: rgb(28, 20, 20);
   border: 2px solid black;
 }
@@ -66,7 +89,7 @@ footer {
 }
 
 .mainIndex {
-  min-height: 80vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -114,6 +137,10 @@ section > p {
   padding: 15px 40px;
 }
 
+.botonColor {
+  color: #444;
+}
+
 button:active {
   transform: translateY(5px);
   box-shadow: 0px 0px 0px 0px #a29bfe;
@@ -143,6 +170,7 @@ footer {
 
 /* Inicio Sesion */
 .mainInicioSesion {
+  padding: 30px;
   min-height: 80vh;
   /*    display: flex;
       align-items: center;
@@ -187,7 +215,7 @@ form .usuario-contraseña {
 
 .usuario-contraseña input {
   margin-top: 10px;
-  width: 100px;
+  width: 290px;
   padding: 0 5px;
   height: 40px;
   font-size: 16px;
@@ -246,6 +274,7 @@ form .usuario-contraseña {
 
 /* Registro */
 .mainRegistro {
+  padding: 30px;
   min-height: 80vh;
   /*    display: flex;
       align-items: center;
@@ -288,7 +317,7 @@ form .inputs-registro {
 
 .inputs-registro input {
   margin-top: 10px;
-  width: 100px;
+  width: 290px;
   padding: 0 5px;
   height: 40px;
   font-size: 16px;
@@ -321,6 +350,7 @@ form .inputs-registro {
 
 /* Nosotros */
 .mainNosotros {
+  padding: 15px;
   min-height: 80vh;
 }
 
@@ -357,6 +387,7 @@ form .inputs-registro {
 
 /* Contactos */
 .mainContacto {
+  padding: 10px;
   min-height: 80vh;
   margin: 20px;
 }
@@ -467,6 +498,7 @@ form .inputs-registro {
 }
 
 .buscador {
+  padding: 40px;
   /* padding: 9px 10px 9px 32px; */
   /* margin-top: 3rem; */
   /* background: #fff url(https://cdn-icons-png.flaticon.com/512/2531/2531409.png)   no-repeat  300px 200px center; */
@@ -571,9 +603,9 @@ h3 {
   }
   header {
     height: auto;
-    display: flex;
+    /* display: flex; */
     /* flex-direction: column; */
-    align-items: center;
+    /* align-items: center; */
     background-color: rgba(43, 3, 3, 0.449);
     font-family: "Oswald", sans-serif;
   }
@@ -671,12 +703,13 @@ h3 {
   }
 }
 /* Vista Tablet */
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 425px) and (max-width: 991px) {
   .fondoPrincipal {
     background-size: cover;
   }
   .header {
     padding: 10px 20px;
+    margin-bottom: 10px;
   }
   .mainIndex {
     display: flex;

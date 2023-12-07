@@ -1,14 +1,15 @@
 /* Inicio Sesion */
 
 .mainInicioSesion {
+  padding: 30px;
     min-height: 80vh;
 /*    display: flex;
     align-items: center;
     justify-content: center;*/
     @include center;
-  }
-  
-  .container {
+}
+
+.container {
     padding: 10px;
 /*    display: flex;
     align-items: center;
@@ -19,38 +20,38 @@
     background-color: rgba(237, 237, 237, 0.395);
     box-shadow: 0px 0px 10px 0px orange;
     border-radius: 10px;
-  }
+}
   
-  .container .h1InicioSesion {
+.container .h1InicioSesion {
     color: $color-principal;
     text-align: center;
     padding: 20px;
     border-bottom: 1px solid black;
-  }
-  
-  .container form {
+}
+
+.container form {
     padding: 0 40px;
     box-sizing: border-box;
-  }
-  
-  form .usuario-contraseña {
+}
+
+form .usuario-contraseña {
     position: relative;
     border-bottom: 2px solid black;
     margin: 20px 0;
-  }
-  
-  .usuario-contraseña input {
+}
+
+.usuario-contraseña input {
     margin-top: 10px;
-    width: 100px;
+    width: 290px;
     padding: 0 5px;
     height: 40px;
     font-size: 16px;
     border: none;
     background: none;
     outline: none;
-  }
-  
-  .usuario-contraseña label {
+}
+
+.usuario-contraseña label {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -58,19 +59,19 @@
     transform: translateY(-50%);
     font-size: 16px;
     pointer-events: none;
-  }
-  
-  .recordar {
+}
+
+.recordar {
     margin: -5px 0 20px 5px;
     color: lightskyblue;
     cursor: pointer;
-  }
-  
-  .recordar:hover {
+}
+
+.recordar:hover {
     text-decoration: underline;
-  }
-  
-  .inicioBoton {
+}
+
+.inicioBoton {
     width: 300px;
     height: 50px;
     border: 1px solid;
@@ -80,20 +81,20 @@
     color: red;
     cursor: pointer;
     outline: none;
-  }
-  
-  .registrarse {
+}
+
+.registrarse {
     margin: 25px 0;
     text-align: center;
     font-size: 16px;
     color: black;
-  }
-  
-  .registrarse a {
+}
+
+.registrarse a {
     color: lightskyblue;
     text-decoration: none;
-  }
-  
-  .registrarse a:hover {
+}
+
+.registrarse a:hover {
     text-decoration: underline;
-  }
+}

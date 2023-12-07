@@ -4,39 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pagina sobre nosotros">
+    <meta name="description"
+        content="Descubre la pasión que impulsa a Shooters Shop. En nuestra página 'Sobre Nosotros', te invitamos a conocer nuestra historia, compromiso y amor por el baloncesto. Desde nuestra fundación hasta la dedicación a proporcionar productos de calidad, en Shooters Shop, estamos aquí para elevar tu experiencia en el mundo del baloncesto. ¡Conoce más sobre nosotros y únete a nuestra comunidad apasionada!">
+    <meta name="author" content="Benitez Gonzalo Daniel">
     <title>Sobre Nosotros</title>
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Mi CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="fondoPrincipal">
     <header>
-        <img class="logo" src="../img/LogoBasquet.png" alt="Logo Basquet">
+        <nav class="navbar navbar-expand-lg" style="background-color:rgba(43, 3, 3, 0.449);">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5" href="#">
+                    <img class="logo" src="../img/Logo Basquet.png" alt="Logo Basquet">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link  header" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header" href="../html/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link header" href="../html/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link header" href="../html/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="border-top: unset;" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="logoUsuario" src="../img/Logo Usuario.png" alt="Logo Usuario">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../html/iniciar-sesion.html">Iniciar Sesión</a></li>
+                                <li><a class="dropdown-item" href="../html/registrarse.html">Registrarse</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <img class="logo" src="/img/Logo Basquet.png" alt="Logo Basquet">
 
         <nav>
-            <a class="header" href="../index.html">Home</a>
-            <a class="header" href="productos.html">Productos</a>
-            <a class="header" href="nosotros.html">Nosotros</a>
-            <a class="header" href="contacto.html">Contacto</a>
-            <a href="iniciar-sesion.html"><img class="logoUsuario" src="../img/LogoUsuario.png" alt="Logo Usuario"></a>
-        </nav>
+            <a class="header" href="index.html">Home</a>
+            <a class="header" href="html/productos.html">Productos</a>
+            <a class="header" href="html/nosotros.html">Nosotros</a>
+            <a class="header" href="html/contacto.html">Contacto</a>
+            <a href="html/iniciar-sesion.html"><img class="logoUsuario"  src="/img/Logo Usuario.png" alt="Logo Usuario"></a>
+        </nav> -->
     </header>
 
     <main class="mainNosotros">
         <h1 class="h1Nosotros">Un poco de nuestra historia...</h1>
         <div class="imgText">
             <img class="fondoNosotros1" src="../img/AstonBirraFoto.jpg" alt="Fondo Basquet">
-            <p class="parrafoNosotros">En Shooters Shop, fusionamos nuestra pasión por el baloncesto con la calidad de los productos que amamos. Soy Benitez Gonzalo Daniel, fundador y amante del juego, comprometido a llevar la esencia del baloncesto a cada cliente. Descubre en cada sección de nuestra tienda online la dedicación y el entusiasmo que solo un verdadero apasionado puede ofrecer. ¡Bienvenido a Shooters Shop, donde cada compra cuenta una historia de amor por el baloncesto!</p>
+            <p class="parrafoNosotros">En Shooters Shop, fusionamos nuestra pasión por el baloncesto con la calidad de
+                los productos que amamos. Soy Benitez Gonzalo Daniel, fundador y amante del juego, comprometido a llevar
+                la esencia del baloncesto a cada cliente. Descubre en cada sección de nuestra tienda online la
+                dedicación y el entusiasmo que solo un verdadero apasionado puede ofrecer. ¡Bienvenido a Shooters Shop,
+                donde cada compra cuenta una historia de amor por el baloncesto!</p>
         </div>
         <div class="imgText">
-            <p class="parrafoNosotros">Nuestro compromiso es más que vender productos de baloncesto; es ser tu aliado en la búsqueda de la excelencia en la cancha. Cada artículo es seleccionado con pasión, reflejando nuestro amor por el juego. Bienvenido a Shooters Shop, donde cada compra es un triple de calidad y estilo.</p> <img class="fondoNosotros2" src="../img/fondoNosotros2.webp" alt="Fondo Basquet">
+            <p class="parrafoNosotros">Nuestro compromiso es más que vender productos de baloncesto; es ser tu aliado en
+                la búsqueda de la excelencia en la cancha. Cada artículo es seleccionado con pasión, reflejando nuestro
+                amor por el juego. Bienvenido a Shooters Shop, donde cada compra es un triple de calidad y estilo.</p>
+            <img class="fondoNosotros2" src="../img/fondoNosotros2.webp" alt="Fondo Basquet">
         </div>
         <div class="imgText">
             <img class="fondoNosotros1" src="../img/fotoNosotros3.jpg" alt="Fondo Basquet">
-            <p class="parrafoNosotros">En Shooters Shop, no solo vendemos productos de baloncesto; vivimos y respiramos el juego. Somos más que una tienda, somos una comunidad apasionada que entiende la magia que ocurre cuando el balón bota en la cancha. Comprometidos con la excelencia y la autenticidad, cada producto que ofrecemos es cuidadosamente seleccionado para reflejar la esencia del baloncesto: determinación, estilo y victoria. Únete a nosotros en este viaje, donde cada canasta es una celebración y cada cliente es parte de nuestra familia dedicada al juego que amamos. ¡Bienvenido a nuestra cancha, donde el baloncesto cobra vida!</p>
+            <p class="parrafoNosotros">En Shooters Shop, no solo vendemos productos de baloncesto; vivimos y respiramos
+                el juego. Somos más que una tienda, somos una comunidad apasionada que entiende la magia que ocurre
+                cuando el balón bota en la cancha. Comprometidos con la excelencia y la autenticidad, cada producto que
+                ofrecemos es cuidadosamente seleccionado para reflejar la esencia del baloncesto: determinación, estilo
+                y victoria. Únete a nosotros en este viaje, donde cada canasta es una celebración y cada cliente es
+                parte de nuestra familia dedicada al juego que amamos. ¡Bienvenido a nuestra cancha, donde el baloncesto
+                cobra vida!</p>
         </div>
         <div class="imgText">
-            <p class="parrafoNosotros">El baloncesto es más que un juego; es nuestra pasión convertida en realidad. Como amante incondicional de la cancha, me enorgullece ser el fundador de este espacio. Cada producto que elegimos refleja no solo calidad, sino también el amor y la dedicación que tenemos por el baloncesto. Únete a nuestra comunidad, donde cada compra es un salto hacia la grandeza. ¡Soy Gonzalo, y en Shooters Shop, el baloncesto es nuestro estilo de vida!</p> <img class="fondoNosotros2" src="../img/fondoNosotros1.webp" alt="Fondo Basquet">
+            <p class="parrafoNosotros">El baloncesto es más que un juego; es nuestra pasión convertida en realidad. Como
+                amante incondicional de la cancha, me enorgullece ser el fundador de este espacio. Cada producto que
+                elegimos refleja no solo calidad, sino también el amor y la dedicación que tenemos por el baloncesto.
+                Únete a nuestra comunidad, donde cada compra es un salto hacia la grandeza. ¡Soy Gonzalo, y en Shooters
+                Shop, el baloncesto es nuestro estilo de vida!</p> <img class="fondoNosotros2"
+                src="../img/fondoNosotros1.webp" alt="Fondo Basquet">
         </div>
     </main>
 
@@ -53,6 +116,9 @@
 
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

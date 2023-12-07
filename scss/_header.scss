@@ -1,44 +1,67 @@
 header {
-    height: 13vh;
-    display: flex;
+    height: 18vh;
+    /*display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(43, 3, 3, 0.449);
+    background-color: rgba(43, 3, 3, 0.449); */
     font-family: "Oswald", sans-serif; 
-  }
-  
-  .logo {
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.logo {
     width: 100px;
-  }
-  
-  .logoUsuario {
+}
+
+.logoUsuario {
     width: 50px;
-  }
-  
-  nav {
+}
+
+nav {
 /*    display: flex;
     justify-content: center;
     align-items: center;*/
     @include center;
-  }
-  
-  .header,
-  .logoUsuario {
+}
+
+.header,
+.logoUsuario {
     margin-left: 10px;
-  }
-  
-  .header {
+}
+
+.header {
+    font-size: 18px;
     color: rgb(168, 20, 20);
+    text-align: center;
     border: 1px solid red;
     text-decoration: none;
     text-transform: uppercase;
     background-color: rgb(0, 0, 0);
     padding: 10px 50px;
     border-radius: 20px;
-  }
-  
-  .header:hover {
-    background-color: rgb(87, 18, 18);
+}
+
+.nav-item{
+  width: 8rem;
+}
+
+.dropdown-toggle{
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-toggle::after {
+  border-top: unset;
+}
+
+.dropdown-menu{
+  --bs-dropdown-min-width:8rem
+}
+
+.header:hover {
+    /*background-color: rgb(87, 18, 18);*/
     color: rgb(28, 20, 20);
     border: 2px solid black;
-  }
+}
